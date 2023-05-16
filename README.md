@@ -1,21 +1,8 @@
 # WithOnnx
+Project following tutorial on how to load an external model into Axon.
 
-**TODO: Add description**
+Add cats and dogs to data.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `with_onnx` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:with_onnx, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/with_onnx>.
+Example on how to run an analysis:
+`WithOnnx.analyze_cats_v_dogs("models/onnx/cats_v_dogs.onnx")`
 
