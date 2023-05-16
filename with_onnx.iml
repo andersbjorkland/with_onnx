@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="ELIXIR_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/_build/dev/lib/with_onnx/ebin" />
+    <output-test url="file://$MODULE_DIR$/_build/test/lib/with_onnx/ebin" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/node_modules/phoenix" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/node_modules/phoenix_html" />
+      <excludeFolder url="file://$MODULE_DIR$/cover" />
+      <excludeFolder url="file://$MODULE_DIR$/deps" />
+      <excludeFolder url="file://$MODULE_DIR$/doc" />
+      <excludeFolder url="file://$MODULE_DIR$/logs" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/axon" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/axon_onnx" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/cc_precompiler" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/complex" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/decimal" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/elixir_make" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/exla" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/kino" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/nx" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/protox" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/stb_image" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/table" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/telemetry" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/xla" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="nx" level="project" />
+    <orderEntry type="library" name="axon" level="project" />
+    <orderEntry type="library" name="exla" level="project" />
+    <orderEntry type="library" name="axon_onnx" level="project" />
+    <orderEntry type="library" name="stb_image" level="project" />
+    <orderEntry type="library" name="kino" level="project" />
+    <orderEntry type="library" name="complex" level="project" />
+    <orderEntry type="library" name="telemetry" level="project" />
+    <orderEntry type="library" name="ex_doc" level="project" />
+    <orderEntry type="library" name="torchx" level="project" />
+    <orderEntry type="library" name="table_rex" level="project" />
+    <orderEntry type="library" name="kino_vega_lite" level="project" />
+    <orderEntry type="library" name="xla" level="project" />
+    <orderEntry type="library" name="elixir_make" level="project" />
+    <orderEntry type="library" name="benchee" level="project" />
+    <orderEntry type="library" name="protox" level="project" />
+    <orderEntry type="library" name="req" level="project" />
+    <orderEntry type="library" name="jason" level="project" />
+    <orderEntry type="library" name="cc_precompiler" level="project" />
+    <orderEntry type="library" name="table" level="project" />
+    <orderEntry type="library" name="dialyxir" level="project" />
+    <orderEntry type="library" name="castore" level="project" />
+    <orderEntry type="library" name="benchee_html" level="project" />
+    <orderEntry type="library" name="benchee_markdown" level="project" />
+    <orderEntry type="library" name="credo" level="project" />
+    <orderEntry type="library" name="decimal" level="project" />
+    <orderEntry type="library" name="excoveralls" level="project" />
+    <orderEntry type="library" name="git_hooks" level="project" />
+    <orderEntry type="library" name="mix_test_watch" level="project" />
+    <orderEntry type="library" name="poison" level="project" />
+    <orderEntry type="library" name="propcheck" level="project" />
+    <orderEntry type="library" name="stream_data" level="project" />
+  </component>
+</module>
