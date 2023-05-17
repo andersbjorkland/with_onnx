@@ -1,10 +1,7 @@
 # WithOnnx
 Project following tutorial on how to load an external model into Axon.
 
-Add cats and dogs to data to `./data`, update filenames accordingly in `./lib/with_onnx.ex`
-
-Example on how to run an analysis:
-`WithOnnx.analyze_cats_v_dogs("models/onnx/cats_v_dogs.onnx")`
+Add cats and dogs to data to `./data` if you don't like the current selection, update path if you have added subdirectories accordingly in `./lib/with_onnx.ex`
 
 Get ONNX model for cats v dogs from https://huggingface.co/ScottMueller/Cats_v_Dogs.ONNX/tree/main and put it in a 
 good place, such as `./models/onnx` and use its path like this 
