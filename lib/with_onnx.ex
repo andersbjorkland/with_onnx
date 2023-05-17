@@ -31,23 +31,14 @@ defmodule WithOnnx do
   end
 
   def analyze_cats_v_dogs(cats_v_dogs_path) do
-    file_names = [
-      "0.jpg",
-      "1.jpg",
-      "2.jpg",
-      "3.jpg",
-      "4.jpg",
-      "7.jpg",
-      "8.jpg",
-      "9.jpg",
-      "10.jpg",
-      "11.jpg"
-    ]
+
+    data_path = "data";
+    images = "data/cat_v_dog/*.jpg"
+      |> Path.wildcard()
 
     resized_images =
-      Enum.map(file_names, fn file_name ->
-        ("data/" <> file_name)
-        |> IO.inspect(label: file_name)
+      Enum.map(images, fn file_name ->
+        IO.inspect(file_name, label: file_name)
         |> StbImage.read_file!()
         |> StbImage.resize(224, 224)
       end)
@@ -59,8 +50,12 @@ defmodule WithOnnx do
       |> Nx.divide(255.0)
       |> Nx.transpose(axes: [:index, :channels, :height, :width])
 
-    # cats_v_dogs = File.read!(cats_v_dogs_path)
-    #{cats_v_dogs_model, cats_v_dogs_params} = get_onnx_model(cats_v_dogs_path)
+    cats_v_dogs = File.read!(cats_v_dogs_path)
+    # If Axon model has been stored as a file, load it with this code
+    # BUT, this way will be deprecated in future release of Axon
+    # {cats_v_dogs_model, cats_v_dogs_params} = Axon.deserialize(cats_v_dogs)
+
+    # Another alternative is to load the ONNX-model
     {cats_v_dogs_model, cats_v_dogs_params} = get_onnx_model(cats_v_dogs_path)
 
     tensor_of_predictions =

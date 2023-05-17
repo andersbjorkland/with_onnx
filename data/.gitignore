@@ -1,2 +1,4 @@
 *
 !.gitignore
+!cat_v_dog
+!cat_v_dog/*
